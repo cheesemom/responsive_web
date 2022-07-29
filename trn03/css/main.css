@@ -1,0 +1,147 @@
+html {
+    font-size: 10px;
+}
+
+/* 20px = 0.8rem */
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    display: flex;
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.TopBanner {
+    background: #f8f8f8;
+    padding: 3rem 0 3rem 0;
+}
+
+.TopBanner .container {
+    position: relative;
+    display: block;
+}
+
+.TopBanner h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 0 0 1rem 0;
+}
+
+.TopBanner p {
+    font-size: 1.2rem;
+}
+
+.TopBanner a {
+    display: inline-block;
+    transform: translateY(-2px);
+    margin: 0 0 0 1rem;
+
+    background: #f4cac1;
+    color: #fff;
+    border-radius: 15px;
+    padding: 5px 11px 7px 11px;
+}
+
+.TopBanner i {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+@media (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .TopBanner {
+        position: absolute;
+        top: 50%;
+        left: 1.5rem;
+        right: 1.5rem;
+        transform: translateY(-50%);
+        background: #f8f8f8;
+        padding: 3rem 0 3rem 0;
+    }
+
+    .TopBanner .container {
+        position: static;
+        display: block;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .TopBanner h2 {
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin: 0 0 1rem 0;
+    }
+
+    .TopBanner p {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    .TopBanner a {
+        display: inline-block;
+        transform: translateY(0);
+        margin: 2rem 0 0 0;
+
+        background: #f4cac1;
+        color: #fff;
+        border-radius: 15px;
+        padding: 5px 11px 7px 11px;
+    }
+
+    .TopBanner i {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px;
+        background: #333;
+        color: #fff;
+    }
+}
+
+
+
+.pop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    background: #f4cac1;
+}
+
+.pop button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.pop:nth-of-type(2) {
+    top: 40%;
+    left: 40%;
+}
+
+.pop:nth-of-type(3) {
+    top: 30%;
+    left: 30%;
+}
+
+.pop:nth-of-type(4) {
+    top: 20%;
+    left: 20%;
+}
+
+.pop:nth-of-type(5) {
+    top: 10%;
+    left: 10%;
+}
